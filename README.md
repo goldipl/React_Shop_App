@@ -11,6 +11,7 @@ Shop written using Vite & React.
 ## Technologies
 Project was created with:
 * React
+* Typescript
 * Vite
 * HTML5
 * CSS3
