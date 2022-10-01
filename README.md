@@ -20,4 +20,4 @@ Project was created with:
 -
 
 ## Live :star2:
--
+https://goldipl.github.io/React_Shop_App/
