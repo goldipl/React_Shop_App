@@ -45,6 +45,7 @@ const ResponsiveAppBar = () => {
       position="static"  
       style={{ 
         background: '#2E3B55',
+        marginBottom: '16px'
     }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -129,7 +130,7 @@ const ResponsiveAppBar = () => {
               ))}
           </Box>
 
-         <ShoppingCartIcon sx={{ border: '1px solid #FFFFFF', borderRadius: '50%', padding: '8px' }}/>
+         <ShoppingCartIcon sx={{ border: '1px solid #FFFFFF', borderRadius: '50%', padding: '8px', cursor: 'pointer' }}/>
         </Toolbar>
       </Container>
     </AppBar>
