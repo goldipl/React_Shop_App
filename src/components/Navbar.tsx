@@ -129,7 +129,7 @@ const ResponsiveAppBar = () => {
               ))}
           </Box>
 
-         <ShoppingCartIcon />
+         <ShoppingCartIcon sx={{ border: '1px solid #FFFFFF', borderRadius: '50%', padding: '8px' }}/>
         </Toolbar>
       </Container>
     </AppBar>
