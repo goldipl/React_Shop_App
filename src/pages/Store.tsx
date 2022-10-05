@@ -17,11 +17,18 @@ export function Store() {
     <Paper
       sx={{
         p: 2,
-        justifyContent: 'center',
-        alignItems: 'center'
       }}
     >
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+    <Grid 
+      container 
+      rowSpacing={1} 
+      columnSpacing={{ xs: 1, sm: 2, md: 3 }}   
+      sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
       <Grid item>
         <Grid item>
           <ButtonBase sx={{ width: 128, height: 128 }}>
