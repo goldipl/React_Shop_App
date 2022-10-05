@@ -17,14 +17,12 @@ export function Store() {
     <Paper
       sx={{
         p: 2,
-        margin: 'auto',
-        maxWidth: 800,
-        flexGrow: 1,
-        backgroundColor: (theme) =>
-          theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+        justifyContent: 'center',
+        alignItems: 'center'
       }}
     >
-      <Grid container spacing={2} columns={16}>
+      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+      <Grid item>
         <Grid item>
           <ButtonBase sx={{ width: 128, height: 128 }}>
             <Img alt="complex" src="https://images.pexels.com/photos/4966180/pexels-photo-4966180.jpeg" />
@@ -55,6 +53,9 @@ export function Store() {
             </Typography>
           </Grid>
         </Grid>
+        </Grid>
+
+        <Grid item>
         <Grid item>
           <ButtonBase sx={{ width: 128, height: 128 }}>
             <Img alt="complex" src="https://images.pexels.com/photos/4966180/pexels-photo-4966180.jpeg" />
@@ -85,6 +86,9 @@ export function Store() {
             </Typography>
           </Grid>
         </Grid>
+        </Grid>
+
+        <Grid item>
         <Grid item>
           <ButtonBase sx={{ width: 128, height: 128 }}>
             <Img alt="complex" src="https://images.pexels.com/photos/4966180/pexels-photo-4966180.jpeg" />
@@ -114,6 +118,7 @@ export function Store() {
               $19.00
             </Typography>
           </Grid>
+        </Grid>
         </Grid>
       </Grid>
     </Paper>
