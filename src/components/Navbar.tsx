@@ -127,8 +127,12 @@ const ResponsiveAppBar = () => {
                 </MenuItem>
               ))}
           </Box>
-
-         <ShoppingCartIcon sx={{ border: '1px solid #FFFFFF', borderRadius: '50%', padding: '8px', cursor: 'pointer' }}/>
+          <Box sx={{ position: 'relative' }}>
+            <ShoppingCartIcon sx={{ border: '1px solid #FFFFFF', borderRadius: '50%', padding: '8px', cursor: 'pointer' }}/>
+            <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'absolute', bottom: '0', right: '-8px', border: '1px solid #F5B042', backgroundColor: '#F5B042', borderRadius: '50%', padding: '2px', cursor: 'pointer', width: '16px', height: '16px' }}>
+              2
+            </Box>
+         </Box>
         </Toolbar>
       </Container>
     </AppBar>
