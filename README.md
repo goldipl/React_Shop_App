@@ -1,7 +1,7 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Screen](#screen)
+* [Screenshots](#screenshots)
 * [Live](#live)
 
 ## General info
@@ -15,9 +15,16 @@ Project was created with:
 * Vite
 * HTML5
 * MUI
+* Swiper
 
-## Screen
--
+## Screenshots
+* desktop screenshot  
+
+![Screenshot](./screenshots/desktop_screenshot.jpg)
+
+* mobile screenshot  
+
+![Screenshot](./screenshots/mobile_screenshot.jpg)
 
 ## Live :star2:
 https://goldipl.github.io/React_Shop_App/
