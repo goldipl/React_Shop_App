@@ -41,7 +41,7 @@ const StoreItem = () => {
                 }}
                 variant="body2"
               >
-                Remove
+                Add to cart
               </Typography>
             </Grid>
           </Grid>
