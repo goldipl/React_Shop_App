@@ -3,7 +3,7 @@ import { Paper, Container, Box, Typography } from "@mui/material";
 const Footer = () => {
     return (
       <Paper sx={{marginTop: 'calc(10% + 60px)',
-      width: '99%',
+      width: 'calc(100vw - 18px)',
       position: 'fixed',
       bottom: '8px',
       display: 'flex',
