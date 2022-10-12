@@ -1,5 +1,4 @@
-import { Grid, ButtonBase, Typography, styled, Button } from "@mui/material";
-import { Box } from "@mui/system";
+import { Grid, ButtonBase, Typography, styled, Button, Box } from "@mui/material";
 import { useState } from "react";
 
 const StoreItem = () => {
