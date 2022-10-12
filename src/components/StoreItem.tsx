@@ -1,4 +1,4 @@
-import { Grid, ButtonBase, Typography, styled } from "@mui/material";
+import { Grid, ButtonBase, Typography, styled, Button } from "@mui/material";
 
 const StoreItem = () => {
     const Img = styled("img")({
@@ -10,7 +10,7 @@ const StoreItem = () => {
   
     return (
       <Grid item>
-        <Grid item>
+        <Grid sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <ButtonBase sx={{ width: 128, height: 128 }}>
             <Img
               alt="complex"
@@ -18,7 +18,7 @@ const StoreItem = () => {
             />
           </ButtonBase>
         </Grid>
-        <Grid item xs={12} sm={12} lg={8} container>
+        <Grid item container>
           <Grid item xs container direction="column" spacing={2}>
             <Grid item xs>
               <Typography gutterBottom variant="subtitle1" component="div">
@@ -30,25 +30,15 @@ const StoreItem = () => {
               <Typography variant="body2" color="text.secondary">
                 ID: 1030114
               </Typography>
-            </Grid>
-            <Grid item>
-              <Typography
-                sx={{
-                  cursor: "pointer",
-                  textAlign: "center",
-                  color: "red",
-                  fontWeight: "600",
-                }}
-                variant="body2"
-              >
-                Add to cart
+              <Typography variant="subtitle1" component="div" sx={{ textAlign: 'center', fontWeight: '600', marginTop: '8px' }}>
+                $19.00
               </Typography>
             </Grid>
-          </Grid>
-          <Grid item>
-            <Typography variant="subtitle1" component="div">
-              $19.00
-            </Typography>
+            <Grid item>
+              <Button variant="contained" sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto' }}>
+                Add to cart
+              </Button>
+            </Grid>
           </Grid>
         </Grid>
       </Grid>
