@@ -76,6 +76,16 @@ const StoreItem = () => {
             </Grid>
           </Grid>
         </Grid>
+        <Button  
+          variant="contained" 
+          sx=
+            {{ 
+              display: 'flex', 
+              alignItems: 'center', 
+              justifyContent: 'center', 
+              margin: '12px auto' 
+            }}>Add to Cart
+            </Button>
       </Grid>
     );
 };  
