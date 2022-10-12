@@ -12,6 +12,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { useState } from 'react';
+import counter from './StoreItem';
 
 const pages = [
   { text: 'Home', href: './', id: 1 },
