@@ -1,6 +1,19 @@
 import { Grid, ButtonBase, Typography, styled, Button } from "@mui/material";
+import { Box } from "@mui/system";
+import { useState } from "react";
 
 const StoreItem = () => {
+
+    const [counter, setCounter] = useState(0);
+
+    const counterUp = () => {
+      setCounter(counter + 1);
+    };
+
+    const counterDown = () => {
+      (counter !== 0) ? setCounter(counter - 1) : setCounter(0);
+    };
+
     const Img = styled("img")({
       margin: "auto",
       display: "block",
@@ -34,9 +47,31 @@ const StoreItem = () => {
                 $19.00
               </Typography>
             </Grid>
-            <Grid item>
-              <Button variant="contained" sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto' }}>
-                Add to cart
+            <Grid item sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <Button 
+                onClick={counterUp} 
+                variant="contained" 
+                sx=
+                  {{ 
+                    display: 'flex', 
+                    alignItems: 'center', 
+                    justifyContent: 'center', 
+                    margin: '0 auto' 
+                  }}>+
+              </Button>
+              <Box sx={{ fontWeight: '600' }}> 
+                {counter}
+              </Box>
+              <Button 
+                onClick={counterDown} 
+                variant="contained" 
+                sx=
+                  {{ 
+                    display: 'flex', 
+                    alignItems: 'center', 
+                    justifyContent: 'center', 
+                    margin: '0 auto' 
+                  }}>-
               </Button>
             </Grid>
           </Grid>
