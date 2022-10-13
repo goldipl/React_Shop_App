@@ -1,7 +1,15 @@
 import { Grid, ButtonBase, Typography, styled, Button, Box } from "@mui/material";
 import { useState } from "react";
 
-const StoreItem = () => {
+type StoreItemsProps = {
+  name: string;
+  description: string;
+  id: number;
+  price: number;
+  imgUrl: string;
+}
+
+export function StoreItem({ name, description, id, price, imgUrl }:StoreItemsProps) {
 
     const [counter, setCounter] = useState(0);
 
@@ -26,24 +34,24 @@ const StoreItem = () => {
           <ButtonBase sx={{ width: 128, height: 128 }}>
             <Img
               alt="complex"
-              src="https://images.pexels.com/photos/4966180/pexels-photo-4966180.jpeg"
+              src={imgUrl}
             />
           </ButtonBase>
         </Grid>
         <Grid item container>
           <Grid item xs container direction="column" spacing={2}>
-            <Grid item xs>
+            <Grid item xs sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
               <Typography gutterBottom variant="subtitle1" component="div">
-                Standard license
+                {name}
               </Typography>
               <Typography variant="body2" gutterBottom>
-                Full resolution 1920x1080 • JPEG
+                {description}
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                ID: 1030114
+                {id}
               </Typography>
               <Typography variant="subtitle1" component="div" sx={{ textAlign: 'center', fontWeight: '600', marginTop: '8px' }}>
-                $19.00
+                ${price}
               </Typography>
             </Grid>
             <Grid item sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -58,7 +66,7 @@ const StoreItem = () => {
                     margin: '0 auto' 
                   }}>+
               </Button>
-              <Box sx={{ fontWeight: '600' }}> 
+              <Box sx={{ fontWeight: '600', margin: '8px' }}> 
                 {counter}
               </Box>
               <Button 
@@ -88,5 +96,3 @@ const StoreItem = () => {
       </Grid>
     );
 };  
-
-export default StoreItem;
