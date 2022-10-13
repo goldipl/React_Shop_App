@@ -1,0 +1,24 @@
+{
+  "items":
+    [{
+      "name": "Book1",
+      "id": 1,
+      "description": "Some description",
+      "price": 10.99,
+      "imgUrl": "https://images.pexels.com/photos/4966180/pexels-photo-4966180.jpeg"
+    },
+    {
+      "name": "Book2",
+      "id": 2,
+      "description": "Some description",
+      "price": 12.99,
+      "imgUrl": "https://images.pexels.com/photos/4966180/pexels-photo-4966180.jpeg"
+    },
+    {
+      "name": "Book3",
+      "id": 3,
+      "description": "Some description",
+      "price": 4.99,
+      "imgUrl": "https://images.pexels.com/photos/4966180/pexels-photo-4966180.jpeg"
+    }]
+}
