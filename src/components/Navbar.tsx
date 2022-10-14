@@ -14,9 +14,9 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { useState } from 'react';
 
 const pages = [
-  { text: 'Home', href: './', id: 1 },
-  { text: 'About', href: './about', id: 2 },
-  { text: 'Store', href: './store', id: 3 }
+  { text: 'Home', href: './React_Shop_App/', id: 1 },
+  { text: 'About', href: './React_Shop_App/about', id: 2 },
+  { text: 'Store', href: './React_Shop_App/store', id: 3 }
 ]
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -53,7 +53,7 @@ const ResponsiveAppBar = () => {
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href="/React_Shop_App/"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -108,7 +108,7 @@ const ResponsiveAppBar = () => {
             variant="h5"
             noWrap
             component="a"
-            href="/"
+            href="/React_Shop_App/"
             sx={{smr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
@@ -119,7 +119,7 @@ const ResponsiveAppBar = () => {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            GOLDI STORE
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
           {pages.map((page) => (

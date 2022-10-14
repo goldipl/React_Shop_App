@@ -11,9 +11,9 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/store" element={<Store />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/React_Shop_App/" element={<Home />} />
+        <Route path="/React_Shop_App/store" element={<Store />} />
+        <Route path="/React_Shop_App/about" element={<About />} />
       </Routes>
       <Footer />
     </>
