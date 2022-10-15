@@ -56,20 +56,6 @@ export function StoreItem({ name, description, id, price, imgUrl }:StoreItemsPro
             </Grid>
             <Grid item sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <Button 
-                onClick={counterUp} 
-                variant="contained" 
-                sx=
-                  {{ 
-                    display: 'flex', 
-                    alignItems: 'center', 
-                    justifyContent: 'center', 
-                    margin: '0 auto' 
-                  }}>+
-              </Button>
-              <Box sx={{ fontWeight: '600', margin: '8px' }}> 
-                {counter}
-              </Box>
-              <Button 
                 onClick={counterDown} 
                 variant="contained" 
                 sx=
@@ -79,6 +65,20 @@ export function StoreItem({ name, description, id, price, imgUrl }:StoreItemsPro
                     justifyContent: 'center', 
                     margin: '0 auto' 
                   }}>-
+              </Button>
+              <Box sx={{ fontWeight: '600', margin: '8px' }}> 
+                {counter}
+              </Box>
+              <Button 
+                onClick={counterUp} 
+                variant="contained" 
+                sx=
+                  {{ 
+                    display: 'flex', 
+                    alignItems: 'center', 
+                    justifyContent: 'center', 
+                    margin: '0 auto' 
+                  }}>+
               </Button>
             </Grid>
           </Grid>
