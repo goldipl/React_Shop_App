@@ -48,7 +48,7 @@ export function StoreItem({ name, description, id, price, imgUrl }:StoreItemsPro
                 {description}
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                {id}
+                ID: {id}
               </Typography>
               <Typography variant="subtitle1" component="div" sx={{ textAlign: 'center', fontWeight: '600', marginTop: '8px' }}>
                 ${price}
