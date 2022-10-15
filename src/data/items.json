@@ -1,23 +1,58 @@
 [
-  {
-     "name":"Decoration",
-     "id":100980,
-     "description":"Some description",
-     "price":10.99,
-     "imgUrl":"https://images.pexels.com/photos/4966180/pexels-photo-4966180.jpeg"
-  },
-  {
-     "name":"PlayStation 3 Pad",
-     "id":100212,
-     "description":"Some description",
-     "price":32.99,
-     "imgUrl":"https://images.pexels.com/photos/275033/pexels-photo-275033.jpeg"
-  },
-  {
-     "name":"Game Boy Color",
-     "id":100333,
-     "description":"Some description",
-     "price":84.99,
-     "imgUrl":"https://images.pexels.com/photos/2263816/pexels-photo-2263816.jpeg"
-  }
+   {
+     "name": "Decoration",
+     "id": 100980,
+     "description": "Some description",
+     "price": 10.99,
+     "imgUrl": "https://images.pexels.com/photos/4966180/pexels-photo-4966180.jpeg"
+   },
+   {
+     "name": "PlayStation 3 Pad",
+     "id": 100212,
+     "description": "Some description",
+     "price": 32.99,
+     "imgUrl": "https://images.pexels.com/photos/275033/pexels-photo-275033.jpeg"
+   },
+   {
+     "name": "Book",
+     "id": 100312,
+     "description": "Some description",
+     "price": 18.99,
+     "imgUrl": "https://images.pexels.com/photos/762687/pexels-photo-762687.jpeg"
+   },
+   {
+     "name": "Xbox 360 Pad",
+     "id": 100213,
+     "description": "Some description",
+     "price": 30.99,
+     "imgUrl": "https://images.pexels.com/photos/1298601/pexels-photo-1298601.jpeg"
+   },
+   {
+     "name": "Flowers",
+     "id": 100244,
+     "description": "Always fresh",
+     "price": 11.99,
+     "imgUrl": "https://images.pexels.com/photos/250716/pexels-photo-250716.jpeg"
+   },
+   {
+     "name": "Sunflowers",
+     "id": 100245,
+     "description": "Always fresh",
+     "price": 12.99,
+     "imgUrl": "https://images.pexels.com/photos/54267/sunflower-blossom-bloom-flowers-54267.jpeg"
+   },
+   {
+     "name": "Tulips",
+     "id": 100246,
+     "description": "Always fresh",
+     "price": 12.49,
+     "imgUrl": "https://images.pexels.com/photos/1961778/pexels-photo-1961778.jpeg"
+   },
+   {
+     "name": "Game Boy Color",
+     "id": 100333,
+     "description": "Some description",
+     "price": 84.99,
+     "imgUrl": "https://images.pexels.com/photos/2263816/pexels-photo-2263816.jpeg"
+   }
 ]
