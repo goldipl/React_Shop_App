@@ -29,9 +29,22 @@ export function Store() {
           alignItems: 'center',
         }}
       >
-      <Box>
+      <Box
+        sx={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+          alignItems: 'center',
+          maxWidth: '1000px',
+          marginBottom: '40px'
+        }}
+      >
         {items.map(item => (
-          <Box>
+          <Box
+            sx={{
+              marginLeft: '16px',
+            }}
+          >
             <StoreItem key={item.id} {...item} />
           </Box>
         ))}
