@@ -1,0 +1,11 @@
+input {
+    display: none;
+}
+
+.star {
+    cursor: pointer;
+}
+
+.star:hover {
+    color: goldenrod;
+}
