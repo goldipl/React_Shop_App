@@ -1,5 +1,6 @@
 import { Grid, ButtonBase, Typography, styled, Button, Box } from "@mui/material";
 import { useState } from "react";
+import StarRating from "./StarRating";
 
 type StoreItemsProps = {
   name: string;
@@ -53,6 +54,9 @@ export function StoreItem({ name, description, id, price, imgUrl }:StoreItemsPro
               <Typography variant="subtitle1" component="div" sx={{ textAlign: 'center', fontWeight: '600', marginTop: '8px' }}>
                 ${price}
               </Typography>
+            </Grid>
+            <Grid item sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <StarRating />
             </Grid>
             <Grid item sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <Button 
