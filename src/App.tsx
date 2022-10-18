@@ -4,11 +4,12 @@ import { Store } from "./pages/Store"
 import { About } from "./pages/About"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
+import { ShopProvider } from "./context/ShopContextProvider"
 
 function App() {
 
   return (
-    <>
+    <ShopProvider>
       <Navbar />
       <Routes>
         <Route path="/React_Shop_App/" element={<Home />} />
@@ -16,7 +17,7 @@ function App() {
         <Route path="/React_Shop_App/about" element={<About />} />
       </Routes>
       <Footer />
-    </>
+    </ShopProvider>
   )
 }
 
