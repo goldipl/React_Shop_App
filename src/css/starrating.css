@@ -1,11 +1,7 @@
-input {
+input[type='radio'] {
     display: none;
 }
 
 .star {
     cursor: pointer;
-}
-
-.star:hover {
-    color: goldenrod;
 }
