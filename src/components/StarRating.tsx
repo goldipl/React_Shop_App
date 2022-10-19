@@ -1,31 +1,33 @@
 import { useState } from 'react';
 import { FaStar } from 'react-icons/fa';
-import './../css/starrating.css';
+import { RadioInput, Star } from './../styles/starRatingStyles';
 
 const StarRating = () => {
     const [star, setStarValue] = useState(0);
 
     return ( 
-        <div>
+        <>
             {[...Array(5)].map((value, i) => {
                 const starValue: number = i + 1;
                 return (
                 <label>
-                    <input 
+                    <RadioInput
                         type='radio' 
                         name='rating' 
                         value={starValue}
                         onClick={() => setStarValue(starValue)}
-                    />
-                    <FaStar 
-                        className='star' 
-                        size={20}
-                        color={starValue <= star ? 'goldenrod' : 'grey' }
-                    />
+                    >
+                    </RadioInput>  
+                    <Star>           
+                        <FaStar 
+                            size={20}
+                            color={starValue <= star ? 'goldenrod' : 'grey' }
+                        />
+                    </Star>        
                 </label>
                 );
             })}
-        </div>
+        </>
      );
 }
 

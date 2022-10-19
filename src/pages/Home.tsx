@@ -1,10 +1,12 @@
 import Swiper from "../components/Swiper";
-import "./../css/home.css"
+import { Title } from "../styles/homeStyles";
 
 export function Home() {
     return (
         <>
-            <h1 className="title">Welcome to our Store!</h1>
+            <Title>
+                Welcome to our Store!
+            </Title>
             <Swiper />
         </>
     );

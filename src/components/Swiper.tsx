@@ -6,7 +6,7 @@ import { Pagination, Navigation, Keyboard, Mousewheel } from 'swiper';
 import 'swiper/css';
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "./../css/swiper.css"
+import "./../styles/swiper.css"
 
 export default() => {
   return (
