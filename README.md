@@ -14,6 +14,8 @@ Project was created with:
 * Typescript
 * Vite
 * HTML5
+* CSS3
+* Styled Components
 * MUI
 * Swiper
 
