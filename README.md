@@ -6,18 +6,19 @@
 
 ## General info
 Project in development.
-Shop written using Vite & React.
+Shop written using Vite & React/TypeScript.
 
 ## Technologies
 Project was created with:
 * React
-* Typescript
+* TypeScript
 * Vite
 * HTML5
 * CSS3
 * Styled Components
 * MUI
 * Swiper
+* json
 
 ## Screenshots
 * desktop screenshot  
