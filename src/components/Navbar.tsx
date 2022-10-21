@@ -11,13 +11,15 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { ShopContext } from '../context/ShopContextProvider';
 
 const pages = [
   { text: 'Home', href: './React_Shop_App/', id: 1 },
   { text: 'About', href: './React_Shop_App/about', id: 2 },
   { text: 'Store', href: './React_Shop_App/store', id: 3 }
 ]
+
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {
@@ -38,6 +40,8 @@ const ResponsiveAppBar = () => {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+
+  const { productsQuantity }:any = useContext(ShopContext);
 
   return (
     <AppBar 
@@ -131,7 +135,7 @@ const ResponsiveAppBar = () => {
           <Box sx={{ position: 'relative' }}>
             <ShoppingCartIcon sx={{ border: '1px solid #FFFFFF', borderRadius: '50%', padding: '8px', cursor: 'pointer' }}/>
             <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'absolute', bottom: '0', right: '-8px', border: '1px solid #F5B042', backgroundColor: '#F5B042', borderRadius: '50%', padding: '2px', cursor: 'pointer', width: '16px', height: '16px' }}>
-              2
+              {productsQuantity}
             </Box>
          </Box>
         </Toolbar>

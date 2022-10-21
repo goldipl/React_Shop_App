@@ -1,5 +1,6 @@
 import { Grid, ButtonBase, Typography, styled, Button, Box } from "@mui/material";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { ShopContext } from "../context/ShopContextProvider";
 import StarRating from "./StarRating";
 
 type StoreItemsProps = {
@@ -12,14 +13,14 @@ type StoreItemsProps = {
 
 export function StoreItem({ name, description, id, price, imgUrl }:StoreItemsProps) {
 
-    const [counter, setCounter] = useState(0);
+    const { productsQuantity, setProductsQuantity }:any = useContext(ShopContext);
 
     const counterUp = () => {
-      setCounter(counter + 1);
+      setProductsQuantity(productsQuantity + 1);
     };
 
     const counterDown = () => {
-      (counter !== 0) ? setCounter(counter - 1) : setCounter(0);
+      (productsQuantity !== 0) ? setProductsQuantity(productsQuantity - 1) : setProductsQuantity(0);
     };
 
     const Img = styled("img")({
@@ -71,7 +72,7 @@ export function StoreItem({ name, description, id, price, imgUrl }:StoreItemsPro
                   }}>-
               </Button>
               <Box sx={{ fontWeight: '600', margin: '8px' }}> 
-                {counter}
+                {productsQuantity}
               </Box>
               <Button 
                 onClick={counterUp} 
