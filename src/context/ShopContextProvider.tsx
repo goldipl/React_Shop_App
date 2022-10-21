@@ -4,10 +4,6 @@ type ShoppingCartProviderProps = {
   children: ReactNode
 }
 
-type ShoppingCartContext = {
-  getProductsQuantity: (id: number) => number
-}
-
 export const ShopContext = createContext({});
 
 export const ShopProvider = ({children}:ShoppingCartProviderProps) => {
